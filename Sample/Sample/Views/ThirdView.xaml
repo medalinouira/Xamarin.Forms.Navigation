@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sample.Views.ThirdView"
+             Title="ThirdView"
+             BindingContext="{Binding Third, Source={StaticResource Locator}}">
+
+    <ContentPage.Content>
+
+        <ContentView x:Name="contentView"
+                     ControlTemplate="{StaticResource MyTemplate}">
+
+            <ScrollView>
+
+                <StackLayout VerticalOptions="CenterAndExpand">
+
+                    <Button Text="Show Parametrers"
+                            Style="{StaticResource BtnPink}"
+                            Command="{Binding Path=BtnTappedCommand}"
+                            CommandParameter="ShowParameters"/>
+
+                    <Button Text="Go Back"
+                            Style="{StaticResource BtnGray}"
+                            Command="{Binding Path=BtnTappedCommand}"
+                            CommandParameter="GoBack"/>
+
+                </StackLayout>
+
+            </ScrollView>
+
+        </ContentView>
+
+    </ContentPage.Content>
+
+</ContentPage>

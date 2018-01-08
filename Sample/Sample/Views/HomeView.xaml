@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sample.Views.HomeView"
+             Title="Xamarin.Forms.Navigation"
+             BindingContext="{Binding Home, Source={StaticResource Locator}}">
+
+    <ContentPage.Content>
+
+        <ContentView x:Name="contentView"
+                     ControlTemplate="{StaticResource MyTemplate}">
+
+            <ScrollView>
+
+                <StackLayout VerticalOptions="CenterAndExpand">
+
+                    <Button Text="First View"
+                            Style="{StaticResource BtnPink}"
+                            Command="{Binding Path=BtnTappedCommand}"
+                            CommandParameter="FirstView"/>
+
+                    <Button Text="Second View"
+                            Style="{StaticResource BtnGray}"
+                            Command="{Binding Path=BtnTappedCommand}"
+                            CommandParameter="SecondView"/>
+
+                    <Button Text="Third View"
+                            Style="{StaticResource BtnPink}"
+                            Command="{Binding Path=BtnTappedCommand}"
+                            CommandParameter="ThirdView"/>
+
+                    <Button Text="Fourth View"
+                            Style="{StaticResource BtnGray}"
+                            Command="{Binding Path=BtnTappedCommand}"
+                            CommandParameter="FourthView"/>
+
+                </StackLayout>
+
+            </ScrollView>
+
+        </ContentView>
+
+    </ContentPage.Content>
+
+</ContentPage>

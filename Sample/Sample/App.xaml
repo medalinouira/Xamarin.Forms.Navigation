@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:Sample.ViewModels"
+             xmlns:ex="clr-namespace:Xamarin.Forms.Toolkit.Extensions;assembly=Xamarin.Forms.ToolKit.Extensions"
+             x:Class="Sample.App">
+    
+    <Application.Resources>
+
+        <!-- Application resource dictionary -->
+        <ResourceDictionary>
+
+            <vm:ViewModelLocator x:Key="Locator" />
+
+            <Style x:Key="LbWhiteStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="17" />
+                <Setter Property="TextColor" Value="#FFFFFF" />
+            </Style>
+
+            <Style x:Key="LbGrayStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="Margin" Value="0,7,0,7"/>
+                <Setter Property="TextColor" Value="#23282d"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+
+            <Style x:Key="BtnPink" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#7E1335"/>
+                <Setter Property="HeightRequest" Value="60"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+                <Setter Property="TextColor" Value="White"/>
+            </Style>
+
+            <Style x:Key="BtnGray" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#23282d"/>
+                <Setter Property="HeightRequest" Value="60"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+                <Setter Property="TextColor" Value="White"/>
+            </Style>
+
+            <ControlTemplate x:Key="MyTemplate">
+
+                <StackLayout VerticalOptions="FillAndExpand">
+
+                    <StackLayout x:Name="stlHeader" 
+                                HeightRequest="90"
+                                BackgroundColor="#23282d"
+                                Orientation="Horizontal">
+
+                        <Image x:Name="imgLogo"                    
+                               Source="{ex:ImageResource Key=ic_xfn.png}"/>
+
+                        <StackLayout x:Name="stlDetails" 
+                                     VerticalOptions="Center">
+
+                            <Label x:Name="lbTitle"
+                                   Style="{StaticResource LbWhiteStyle}"
+                                   Text="Xamarin.Forms.Navigation"/>
+
+                            <Label x:Name="lbDescription"
+                                   Font="Bold"
+                                   Style="{StaticResource LbWhiteStyle}"
+                                   Text="Navigation for Xamarin.Forms"/>
+
+                        </StackLayout>
+
+                    </StackLayout>
+
+                    <ContentPresenter VerticalOptions="FillAndExpand"/>
+
+                    <Label Text="Copyright © Mohamed Ali NOUIRA. All rights reserved."
+                           VerticalOptions="EndAndExpand"
+                           Style="{StaticResource LbGrayStyle}"/>
+
+                </StackLayout>
+
+            </ControlTemplate>
+
+        </ResourceDictionary>
+
+    </Application.Resources>
+
+</Application>

@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <title>Xamarin.Forms.Navigation</title>
+    <PackageId>Xamarin.Forms.Navigation</PackageId>
+    <PackageVersion>1.0.1</PackageVersion>
+    <Authors>Mohamed Ali NOUIRA</Authors>
+    <Owners>Mohamed Ali NOUIRA</Owners>
+    <Description>Navigation for Xamarin.Forms.</Description>
+    <Summary>Navigation for Xamarin.Forms.</Summary>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>Navigation</PackageReleaseNotes>
+    <Copyright>Copyright (c) Mohamed Ali NOUIRA. All rights reserved.</Copyright>
+    <PackageTags>Xamarin Xamarin.Forms Navigation MVVM Sweet-MIT</PackageTags>
+    <PackageLicenseUrl>https://github.com/medalinouira/Xamarin.Forms.Navigation</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/medalinouira/Xamarin.Forms.Navigation</PackageProjectUrl>
+    <RepositoryUrl>https://www.github.com/medalinouira/Xamarin.Forms.Navigation</RepositoryUrl>
+    <PackageIconUrl>https://github.com/medalinouira/Xamarin.Forms.Navigation/blob/master/Xamarin.Forms.Navigation/ic_xfn.png?raw=true</PackageIconUrl>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
+  </ItemGroup>
+
+</Project>

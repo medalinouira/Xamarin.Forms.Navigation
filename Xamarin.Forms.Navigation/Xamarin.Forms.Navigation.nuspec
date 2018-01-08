@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/medalinouira/Xamarin.Forms.Navigation</licenseUrl>
+    <projectUrl>https://github.com/medalinouira/Xamarin.Forms.Navigation</projectUrl>
+    <iconUrl>https://github.com/medalinouira/Xamarin.Forms.Navigation/blob/master/Xamarin.Forms.Navigation/ic_xfn.png?raw=true</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Xamarin Xamarin.Forms Navigation MVVM Sweet-MIT</releaseNotes>
+    <copyright>Copyright (c) Mohamed Ali NOUIRA. All rights reserved.</copyright>
+    <tags>Xamarin Xamarin.Forms Navigation</tags>
+  </metadata>
+</package>
